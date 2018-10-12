@@ -1,0 +1,487 @@
+@import "main.scss";
+.banner{
+    height: 536px;
+    //background: yellowgreen;
+    //border: 1px solid #000;
+    position: relative;
+    img{
+        width: 100%;
+        height:536px;
+        border: #000000;
+        display: block;        
+    }
+    #lbtn{
+        width: 18px;
+        height: 54px;
+        //border: 1px solid #1B6D85;
+        position: absolute;
+        left: 12px;
+        top: 237px;
+        z-index: 2;
+        display: block;
+        background: url(../img/index/focus_lr0918.png) no-repeat -2px -5px;
+        
+    }
+    #lbtn:hover{
+        background: url(../img/index/focus_lr0918.png) no-repeat -2px -67px;
+    }
+    #rbtn{
+        width: 20px;
+        height: 54px;
+        //border: 1px solid #1B6D85;
+        position: absolute;
+        right: 12px;
+        top: 237px;
+        z-index: 2;
+        display: block;
+        background: url(../img/index/focus_lr0918.png) no-repeat -60px -5px;
+        
+    }
+    #rbtn:hover{
+        background: url(../img/index/focus_lr0918.png) no-repeat -60px -67px;
+    }
+    .ol{
+        position: absolute;
+        bottom: 22px;
+        left: 50%;
+        cursor: pointer;
+        //-webkit-transform: translateX(-50%);
+        //background: rgba(255,255,255,.6);
+        //border-radius: 7px;
+        //padding: 3px;
+        //background: pink;
+        z-index: 999;
+        .ollis{
+            background: red;
+            float: left;
+            width: 12px;
+            height: 12px;
+            margin-left: 0px;
+            border-radius: 50%;
+            margin-right: 8px;
+            z-index: 9999;
+        }
+    }
+}
+.kong{
+    width: 100%;
+    height: 54px;
+    background: #fff;
+}
+.fan{
+    height: 54px;
+    background: url(../img/index/fan.jpg) no-repeat center top;
+    cursor: pointer;
+}
+.kong2{
+    height: 75px;
+    background: #fff;
+}
+.fall{
+    height: 56px;
+    background: url(../img/index/51.jpg) no-repeat center top;
+    span{
+        display: block;
+        width: 298px;
+        height: 56px;
+        cursor: pointer;
+        float: right;
+    }
+}
+.fall-content{
+    height: 390px;
+    //background: gold;
+    padding-top: 80px;
+    margin-bottom: 45px;
+    .fall-content2{
+        height: 392px;
+        width: 100%;
+        //border: 1px solid #000;
+        padding-left: 22px;
+        a{
+            width: 268px;
+            height: 392px;
+            display: block;
+            float: left;
+            margin-right: 28px;
+            img{
+                border: 0;
+                display: block;
+                width: 268px;
+                height: 392px;
+            }
+        }
+    }
+}
+.kong3{
+    height: 110px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    line-height: 110px;
+    font-size: 18px;
+    color: #9a9a9a;
+    //border: 1px solid #000;
+}
+@mixin public($height,$width){
+    p{
+        height: $height;
+        a{
+            display: block;
+            img{
+                width: $width;
+                height: $height;
+                display: block;
+                border: 0;
+            }
+        }
+    }
+    
+}
+@mixin public2($width){
+    .chozhi{
+            width:$width;
+            height: 70px;
+            box-sizing: border-box;
+            border: 1px solid #e8e7ec;
+            border-top: 0;
+            display: block;
+            line-height: 70px;
+            b:first-child{
+                color: #333333;
+                font-size: 14px;
+                font-weight: 100;
+                float: left;
+                margin-left: 14px;
+            }
+            b:last-child{
+                color: #a10000;
+                font-size: 14px;
+                font-weight: 100;
+                float: right;
+                margin-right: 14px;
+            }
+        }
+}
+.youx{
+    height: 1040px;
+    //background: cyan;
+    margin-bottom: 16px;
+   // border: 1px solid #000;
+    .youx-top{
+        height: 516px;
+        width: 100%;
+        //background: pink;
+        margin-bottom: 16px;
+        .y-t1{
+            width: 590px;
+            height: 510px;
+            float: left;
+            margin-right: 17px;
+            @include public(440px,590px);
+//          p{
+//              height: 440px;
+//              a{
+//                  display: block;
+//                  img{
+//                      width: 590px;
+//                      height: 440px;
+//                      display: block;
+//                      border: 0;
+//                  }
+//              }
+//          }
+            @include public2(590px);
+//          .chozhi{
+//              width:590px;
+//              height: 70px;
+//              box-sizing: border-box;
+//              border: 1px solid #e8e7ec;
+//              border-top: 0;
+//              display: block;
+//              line-height: 70px;
+//              b:first-child{
+//                  color: #333333;
+//                  font-size: 14px;
+//                  font-weight: 100;
+//                  float: left;
+//                  margin-left: 14px;
+//              }
+//              b:last-child{
+//                  color: #a10000;
+//                  font-size: 14px;
+//                  font-weight: 100;
+//                  float: right;
+//                  margin-right: 14px;
+//              }
+//          }
+        }
+        .y-t2{
+            height: 516px;
+            width: 290px;
+            float: left;
+            margin-right: 17px;
+            .y-t2-s{
+                height: 250px;
+                @include public(180px,290px);
+                @include public2(290px);
+            }
+            .y-t2-x{
+                height: 266px;
+                @include public(196px,290px);
+                @include public2(290px);
+            }
+        }
+        .y-t3{
+            width: 288px;
+            height: 510px;
+            //background: red;
+            float: left;
+            @include public(440px,288px);
+            @include public2(288px);
+        }
+    }
+    .youx-bot{
+        height: 510px;
+        //background: greenyellow;
+        .y-b1{            
+            height: 510px;
+            float: left;
+            width: 590px;
+            margin-right: 17px;
+            @include public(440px,590px);
+            @include public2(590px);
+        }
+        .y-b2{
+            height: 510px;
+            float: left;
+            width: 290px;
+            margin-right: 17px;
+            .y-b2-s{
+                height: 250px;
+                margin-bottom: 16px;
+                @include public(180px,290px);
+                @include public2(290px);
+            }
+            .y-b2-x{
+                height: 245px;
+                @include public(176px,290px);
+                @include public2(290px);
+            }
+        }
+        .y-b3{
+            height:510px ;
+            width: 287px;
+            float: left;
+            @include public(440px,287px);
+            @include public2(287px);
+        }
+    }
+}
+.xiaz{
+    height: 510px;
+    //background: yellowgreen;
+    margin-bottom: 22px;
+    .xz{
+        width: 286px;
+        height: 510px;
+        //background: goldenrod;
+        float: left;
+        margin-right: 18px;
+        @include public(440px,286px);
+        @include public2(286px);
+    }
+    .x-z1{
+        margin-right: 0;
+        margin-left: 3px;
+    }
+}
+.jinp{
+    height: 610px;
+    //background: yellowgreen;
+    //margin-bottom: 10px;
+    .jinp-s{
+        height: 276px;
+        //background: goldenrod;
+        .j-c1{
+            width: 386px;
+            height: 276px;
+            //background: pink;
+            float:left ;
+            @include public(276px,386px);
+        }
+        .j-c2{
+            width: 374px;
+            height:276px;
+            //background:greenyellow ;
+            float: left;
+            @include public(276px,374px);
+        }  
+        .j-c3{
+            width: 442px;
+            height: 276px;
+            //background: gray;
+            float: left;
+            @include public(276px,442px);
+        }  
+    }
+    .jing-x{
+        height: 335px;
+        //background: burlywood;
+        .j-c4{
+            width: 386px;
+            height: 283px;
+            //background: gray;
+            float: left;
+            padding-top: 52px;
+            @include public(250px,386px);
+        }
+        .j-c5{
+            width: 374px;
+            height: 300px;
+            //background: gray;
+            padding-top: 35px;
+            float: left;
+            @include public(268px,374px);
+        }  
+        .j-c6{
+            width: 442px;
+            height: 283px;
+            //background: gray;
+            float: left;
+            padding-top: 52px;
+            @include public(250px,442px);
+        }    
+    }
+}
+.server{
+    height: 286px;
+    //background: pink;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e1; 
+    padding-left: 42px; 
+    padding-right: 42px;  
+    .ser-s{
+        height: 161px;
+        //background: red;
+        padding-top: 35px;
+        //padding-left: 42px;
+        a:first-child{
+            //display: block;
+            border-right: 1px solid #e0e0e1 ;
+            width: 370px;
+            height: 140px;
+            //background: gold;
+            float: left;
+            overflow: hidden;
+            .ser-s1{
+                display: block;
+                width: 36px;
+                height: 40px;
+                //border: 1px solid #000;
+                margin: 15px auto;
+                background: url(../img/index/onlinecustomer.png) no-repeat center top;
+            }
+            .kf{
+                overflow: hidden;
+                //background: gold;
+                .ser-s2{
+                    width: 156px;
+                    height: 32px;
+                    //background: #b81c22;
+                    //border: 1px solid #000;
+                    display: block;
+                    margin: 18px auto;
+                    font-size: 12px;
+                    color: #ffffff;
+                    text-align: center;
+                    line-height: 32px;
+                }
+            }
+        }
+        a:nth-child(2){
+            width: 372px;
+            height: 140px;
+            //background: cyan;
+            float: left;
+            border-right: 1px solid #e0e0e1 ;
+            .ser-s3{
+                width: 40px;
+                height: 40px;
+                display: block;
+                //border: 1px solid #000;
+                margin: 20px auto;
+                background: url(../img/index/seven.png) no-repeat center top;                
+            }
+            .ser-s4{
+                font-size: 12px;
+                color: #727171;
+                display: block;                
+                width: 124px;
+                height: 54px;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 26px;
+            }
+        }
+        p{
+            width: 372px;
+            height: 140px;
+            //background: burlywood;
+            float: left;
+            .ser-s5{
+                display: block;
+                width: 100px;
+                height: 100px;
+                margin: 3px auto 14px;
+                background: url(../img/index/2014_8_29_16_39_33_7709.jpg) no-repeat center/cover;
+                
+            }
+            .ser-s6{
+                font-size: 12px;
+                color: #727171;
+                display: block;
+                width: 126px;
+                height: 20px;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 20px;
+                .ser-s66{
+                    font-weight: 100;
+                    color: #a10000;
+                }
+            }
+        }
+    }
+    .ser-x{
+        height: 60px;
+        background: #f8f8f8;
+        //padding-left: 42px;
+        //padding-right: 42px;
+        //line-height: 60px;
+        li{
+            float: left;
+            height: 26px;
+            border-right: 1px solid #dadadb;
+            padding-left: 64px;
+            padding-right:64px ;
+            margin-top: 18px;
+            line-height: 26px;            
+            a{
+                //border: 1px solid #00FFFF;
+                font-size: 12px;
+                color: #323232;
+            }
+        }
+        li:last-child{
+            border-right: 0;
+        }
+    }
+}
+.xian{
+    height: 1px;
+    background: #000;
+    width: 100%;
+    margin-bottom: 10px;
+}
