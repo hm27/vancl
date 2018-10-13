@@ -27,7 +27,7 @@ em{
     border-bottom:1px solid #cccccc ;
     background: #f7f7f7;
 }
-.top,.header,.banner,.fan,.fall,.fall-content,.youx,.xiaz,.jinp,.server{
+.top,.header,.banner,.fan,.fall,.fall-content,.youx,.xiaz,.jinp,.server,.footer-f3,.lg-1,.xian2,.lg-content{
     width: 1202px;
     margin: 0 auto;
 }
@@ -269,4 +269,102 @@ em{
         }
     }
 }
-
+.xian{
+    height: 1px;
+    background: #000;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.footer-f1{
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #3e3a39;
+    text-align: center;
+    line-height: 25px;
+}
+.footer-f2{
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    color: #3e3a39;
+    text-align: center;
+    line-height: 25px;
+}
+@mixin public3($width,$height,$x,$y){
+    display: inline-block;
+    margin-top: 4px;
+    width: $width;
+    height: $height;
+    background:url(../img/index/spritesbgtop.png) no-repeat $x $y;
+}
+.footer-f3{
+    height: 46px;
+    width: 730px;
+    //border: 1px solid #000000;
+    margin: 30px auto 25px;
+    a{
+        margin-right: 20px;
+    }
+    a:first-child{
+        @include public3(114px,42px,0px,-582px);
+    }
+    a:nth-child(2){
+        display: inline-block;
+        width: 156px;
+        height: 46px;
+        //border: 1px solid #f00;
+        background:url(../img/index/spritesbgtop.png) no-repeat 0px -629px;
+    }
+    a:nth-child(3){
+        @include public3(92px,42px,0px,-674px);
+    }
+    a:nth-child(4){
+        @include public3(100px,42px,-97px,-674px);
+    }
+    a:nth-child(5){
+        @include public3(42px,42px,-202px,-674px);
+    }
+    a:nth-child(6){
+        display: inline-block;
+        margin-top: 4px;
+        width: 102px;
+        height: 42px;
+        //border: 1px solid #f00;
+        background:url(../img/index/kexin_brand_for_others.png) no-repeat center/cover;
+        margin-right: 0;
+    }
+}
+.hui{
+    width: 76px;
+    height: 206px;
+    //border: 1px solid #000;
+    position: fixed;
+    left: 1240px;
+    bottom: 50px;
+    z-index: 33;
+    //margin: 50px auto;
+    li:first-child{
+        a{
+            display: block;
+            width: 76px;
+            height: 78px;
+            background:url(../img/index/baywindow.png) no-repeat 0 0 ;
+        } 
+    }
+    li:nth-child(2){
+        a{
+            display: block;
+            width: 76px;
+            height: 72px;
+            background:url(../img/index/baywindow.png) no-repeat 0 -77px;
+        } 
+    }
+    li:nth-child(3){
+        cursor: pointer;
+        width: 76px;
+        height: 56px;
+        background:url(../img/index/baywindow.png) no-repeat 0 -149px; 
+    }    
+}
