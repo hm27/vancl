@@ -151,25 +151,25 @@ $.ajax({
 //下装推荐ajax请求
 $.ajax({
 	type:"get",
-		url:"zpic.json",
-		async:true,
-		success : function(arr){
-				var brr = [];
-				for(var i = 0,len = arr.length;i < len;i ++){
-					//console.log(arr);
-					var str= `
-						<p>
-							<a href="#">
-								<img src="${arr[i]}" alt="" />
-							</a>
-						</p>
-					`;
-					brr.push(str);					
-				}
-				$('.x-z2').prepend(brr[0]);
-				$('.x-z3').prepend(brr[1]);
-				$('.x-z4').prepend(brr[2]);
-				$('.x-z1').prepend(brr[3]);
-				//console.log(brr[0]);				
+	url:"zpic.json",
+	async:true,
+	success : function(arr){
+		var brr = [];
+		for(var i = 0,len = arr.length;i < len;i ++){
+			console.log(arr);
+			var str= `
+				<p>
+					<a href="#">
+						<img src="${arr[i]}" alt="" />
+					</a>
+				</p>
+			`;
+			brr.push(str);					
 		}
+		$('.x-z2').prepend(brr[0]);
+		$('.x-z3').prepend(brr[1]);
+		$('.x-z4').prepend(brr[2]);
+		$('.x-z1').prepend(brr[3]);
+		//console.log(brr[0]);				
+	}
 })

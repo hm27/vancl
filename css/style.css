@@ -38,7 +38,7 @@ em {
   border-bottom: 1px solid #cccccc;
   background: #f7f7f7; }
 
-.top, .header, .banner, .fan, .fall, .fall-content, .youx, .xiaz, .jinp, .server, .footer-f3, .lg-1, .xian2, .lg-content {
+.top, .header, .banner, .fan, .fall, .fall-content, .youx, .xiaz, .jinp, .server, .footer-f3, .lg-1, .xian2, .lg-content, .zc-content {
   width: 1202px;
   margin: 0 auto; }
 
@@ -1082,6 +1082,35 @@ em {
               height: 35px;
               margin-right: 12px;
               background: url(../img/index/logos.jpg) no-repeat -228px 0; }
+        .lg-content .lg-con-rt .lg-rt-con .form-dl .for-bot2 {
+          display: none;
+          width: 350px;
+          height: 280px;
+          padding-top: 20px;
+          padding-left: 22px;
+          padding-right: 22px;
+          border-bottom: 1px dotted #909090; }
+          .lg-content .lg-con-rt .lg-rt-con .form-dl .for-bot2 input {
+            height: 46px; }
+          .lg-content .lg-con-rt .lg-rt-con .form-dl .for-bot2 #phone {
+            display: inline-block;
+            width: 362px;
+            border: 1px solid #dcdcdc; }
+          .lg-content .lg-con-rt .lg-rt-con .form-dl .for-bot2 #yan {
+            margin-top: 18px;
+            width: 146px;
+            display: inline-block;
+            border: 1px solid #dcdcdc; }
+          .lg-content .lg-con-rt .lg-rt-con .form-dl .for-bot2 .dl-2 {
+            display: block;
+            clear: both;
+            width: 364px;
+            height: 46px;
+            background: #b42025;
+            border: 0;
+            font-size: 18px;
+            color: #fff;
+            margin-top: 18px; }
 
 .footer-f11 {
   height: 54px;
@@ -1092,5 +1121,112 @@ em {
   width: 558px;
   height: 46px;
   margin: 0 auto 24px; }
+
+/*-------------------------------注册----------------------------------*/
+.zc-content {
+  height: 526px;
+  margin-bottom: 57px; }
+  .zc-content .zc-con-lt {
+    width: 686px;
+    height: 526px;
+    float: left; }
+    .zc-content .zc-con-lt .lg-imgt {
+      margin-top: 92px;
+      margin-left: 130px; }
+  .zc-content .zc-con-rt {
+    width: 516px;
+    height: 526px;
+    float: left; }
+    .zc-content .zc-con-rt .zc-con-rt-top {
+      padding-top: 22px;
+      width: 420px;
+      height: 504px; }
+      .zc-content .zc-con-rt .zc-con-rt-top .zc-con-top {
+        width: 420px;
+        height: 60px;
+        box-sizing: border-box;
+        border-bottom: 2px solid #b81e20; }
+        .zc-content .zc-con-rt .zc-con-rt-top .zc-con-top .zc-con-top-h3 {
+          font-size: 20px;
+          color: #a2a2a2;
+          float: left;
+          line-height: 40px;
+          margin-top: 20px; }
+        .zc-content .zc-con-rt .zc-con-rt-top .zc-con-top .zc-con-top-sp {
+          float: right;
+          font-size: 12px;
+          color: #a2a2a2;
+          line-height: 40px;
+          margin-top: 20px; }
+          .zc-content .zc-con-rt .zc-con-rt-top .zc-con-top .zc-con-top-sp b {
+            color: #b52024;
+            font-weight: 100; }
+      .zc-content .zc-con-rt .zc-con-rt-top .for-zc {
+        display: block;
+        padding-top: 20px;
+        width: 413px;
+        height: 424px;
+        padding-left: 7px; }
+        .zc-content .zc-con-rt .zc-con-rt-top .for-zc p {
+          height: 44px; }
+        .zc-content .zc-con-rt .zc-con-rt-top .for-zc #yzm {
+          margin-top: 17px;
+          height: 44px;
+          width: 260px;
+          border: 1px solid #cbcbcb;
+          float: left;
+          margin-right: 5px; }
+        .zc-content .zc-con-rt .zc-con-rt-top .for-zc .yzm-spa {
+          margin-top: 17px;
+          width: 140px;
+          height: 44px;
+          border: 1px solid #cbcbcb;
+          float: left; }
+        .zc-content .zc-con-rt .zc-con-rt-top .for-zc #phone2 {
+          margin-top: 17px;
+          height: 44px;
+          width: 260px;
+          border: 1px solid #cbcbcb;
+          float: left;
+          margin-right: 5px;
+          clear: both;
+          margin-bottom: 17px; }
+        .zc-content .zc-con-rt .zc-con-rt-top .for-zc .phone2-spa {
+          margin-top: 17px;
+          width: 140px;
+          height: 44px;
+          border: 1px solid #cbcbcb;
+          float: left; }
+        .zc-content .zc-con-rt .zc-con-rt-top .for-zc #zpe {
+          display: block;
+          width: 410px;
+          height: 44px;
+          border: 1px solid #cbcbcb; }
+        .zc-content .zc-con-rt .zc-con-rt-top .for-zc #spwd, .zc-content .zc-con-rt .zc-con-rt-top .for-zc #zspwd {
+          display: block;
+          width: 410px;
+          height: 44px;
+          border: 1px solid #cbcbcb;
+          margin-top: 17px; }
+        .zc-content .zc-con-rt .zc-con-rt-top .for-zc .for-spa {
+          display: block;
+          height: 44px;
+          width: 410px;
+          margin-top: 8px;
+          line-height: 44px;
+          font-size: 12px;
+          color: #9d9d9d; }
+          .zc-content .zc-con-rt .zc-con-rt-top .for-zc .for-spa #cx {
+            vertical-align: middle; }
+          .zc-content .zc-con-rt .zc-con-rt-top .for-zc .for-spa a {
+            color: #b52024;
+            font-size: 12px; }
+        .zc-content .zc-con-rt .zc-con-rt-top .for-zc .zc-btn {
+          width: 410px;
+          height: 44px;
+          background: #9a9a9a;
+          border: 0;
+          font-size: 14px;
+          color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

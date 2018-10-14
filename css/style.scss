@@ -678,6 +678,42 @@
                             }
                         }
                     }
+                  .for-bot2{
+                        display: none;
+                        width: 350px;
+                        height: 280px;
+                        //background: pink;
+                        //margin: 50px auto;
+                        padding-top: 20px;
+                        padding-left: 22px;
+                        padding-right: 22px;
+                        border-bottom: 1px dotted #909090;
+                        input{
+                            height: 46px;
+                        }
+                        #phone{
+                            display: inline-block;
+                            width: 362px;
+                            border: 1px solid #dcdcdc;
+                        }
+                        #yan{
+                            margin-top: 18px;
+                            width: 146px;
+                            display: inline-block;
+                            border: 1px solid #dcdcdc;
+                        }
+                        .dl-2{
+                            display: block;
+                            clear: both;
+                            width: 364px;
+                            height: 46px;
+                            background: #b42025;
+                            border: 0;
+                            font-size: 18px;
+                            color: #fff;
+                            margin-top: 18px;
+                        }
+                    }
             }
         }
     }
@@ -692,4 +728,144 @@
     width: 558px;
     height: 46px;
     margin: 0 auto 24px;
+}
+
+    
+
+/*-------------------------------注册----------------------------------*/
+.zc-content{
+    height: 526px;
+    //background: pink;
+    margin-bottom: 57px;
+    .zc-con-lt{
+        width: 686px;
+        height: 526px;
+        //background: yellow;
+        float: left;
+        .lg-imgt{
+            margin-top: 92px;
+            margin-left: 130px;
+        }
+    }
+    .zc-con-rt{
+        width: 516px;
+        height: 526px;
+        //background: greenyellow;
+        float: left;
+        .zc-con-rt-top{
+            padding-top: 22px;
+            width: 420px;
+            height: 504px;
+            //background: red;
+            .zc-con-top{
+                width: 420px;
+                height: 60px;
+                //background: gold;
+                box-sizing: border-box;
+                border-bottom: 2px solid #b81e20;
+                //padding-top: 22px;                
+                .zc-con-top-h3{
+                    //margin-top: 22px;
+                    font-size: 20px;
+                    color: #a2a2a2;
+                    float: left;
+                    line-height: 40px;
+                    //border: 1px solid #000;
+                    margin-top: 20px;
+                }
+                .zc-con-top-sp{
+                    float: right;
+                    font-size: 12px;
+                    color: #a2a2a2;
+                    line-height: 40px;
+                     margin-top: 20px;
+                    b{
+                        color: #b52024;
+                        font-weight: 100;
+                    }
+                }
+            }
+            .for-zc{
+                display: block;
+                padding-top: 20px;
+                width: 413px;
+                height: 424px;
+                //background: cyan;
+                padding-left: 7px;  
+                p{
+                    height: 44px;
+                }             
+                #yzm{
+                    margin-top: 17px;
+                    height:44px;
+                    width: 260px;
+                    border: 1px solid #cbcbcb;
+                    float: left;
+                    margin-right: 5px;
+                }
+                .yzm-spa{
+                    margin-top: 17px;
+                    width:140px;
+                    height: 44px;
+                    border: 1px solid #cbcbcb;
+                    float: left;
+                }
+                #phone2{
+                    margin-top: 17px;
+                    height:44px;
+                    width: 260px;
+                    border: 1px solid #cbcbcb;
+                    float: left;
+                    margin-right: 5px;
+                    clear: both;
+                    margin-bottom: 17px;
+                }
+                .phone2-spa{
+                    margin-top: 17px;
+                    width:140px;
+                    height: 44px;
+                    border: 1px solid #cbcbcb;
+                    float: left;
+                }
+                #zpe{
+                    display: block;
+                    width: 410px;
+                    height: 44px;
+                    border: 1px solid #cbcbcb;
+                }
+                #spwd,#zspwd{
+                    display: block;
+                    width: 410px;
+                    height: 44px;
+                    border: 1px solid #cbcbcb;
+                    margin-top: 17px;
+                }
+                .for-spa{
+                    display: block;
+                    height: 44px;
+                    width: 410px;
+                    //border: 1px solid #000;
+                    margin-top: 8px;
+                    line-height: 44px;
+                    font-size: 12px;
+                    color: #9d9d9d;
+                    #cx{
+                        vertical-align: middle;
+                    }
+                    a{
+                        color: #b52024;
+                        font-size: 12px;
+                    }
+                }
+                .zc-btn{
+                    width: 410px;
+                    height: 44px;
+                    background: #9a9a9a;
+                    border: 0;
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+            }
+        }        
+    }
 }

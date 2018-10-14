@@ -1,0 +1,3 @@
+$("#yzm").hover(function(){
+	//alert()
+})
