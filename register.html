@@ -26,25 +26,30 @@
 				<div class="zc-con-rt-top">
 					<div class="zc-con-top">
 						<h3 class="zc-con-top-h3">注册新用户</h3>
-						<span class="zc-con-top-sp">我已经注册,现在就<b>登录</b></span>
+						<span class="zc-con-top-sp">我已经注册,现在就 <b>登录</b></span>
 					</div>
 					<form action="" class="for-zc">
 						<p>
 							<input type="text" name="" id="yzm" value="" placeholder="验证码"/>
-							<span class="yzm-spa">1</span>
-						</p>
+							<span class="yzm-spa"></span>
+							<span style="clear: both;display: none;">请输入图片信息</span>
+						</p>						
 						<p>
 							<input type="text" name="" id="phone2" value="" placeholder="请输入手机号"/>
-							<span class="phone2-spa">2</span>
-						</p>						
-						<input type="text" name="" id="zpe" value="" placeholder="填写手机验证码"/>										
-						<input type="password" name="" id="spwd" value="" placeholder="设置登录密码"/>
+							<span style="position: absolute;top: 147px;left: 7px; font-size: 12px;color: #999999;"></span>
+							<span class="phone2-spa">获取短信验证码</span>
+						</p>
+						<input type="text" name="" id="zpe" value="" placeholder="请填写用户名"/>	
+						<span style="position: absolute;top: 210px;left: 7px;font-size: 12px;color: #999999;"></span>
+						<input type="password" name="" id="spwd" value="" placeholder="设定登录密码"/>
+						<span style="position: absolute;top: 276px;left: 7px;font-size: 12px;color: #999999;"></span>
 						<input type="password" name="" id="zspwd" value="" placeholder="再次填写密码"/>
+						<span style="position: absolute;top: 341px;left: 7px;font-size: 12px;color: #999999;"></span>
 						<span class="for-spa">
 							<input type="checkbox" name="" id="cx" value="" />请阅读							                                      	
- 							<a href="#">《VANCL凡客诚品服务条款》</a>
+ 							<a href="#" class="for-spa-a">《VANCL凡客诚品服务条款》</a>
 						</span>						
-						<button class="zc-btn">立即注册</button>						
+						<p class="zc-btn">立即注册</p>						
 					</form>
 				</div>
 			</div>
@@ -58,6 +63,7 @@
 			<a href="#"></a>
 		</p>
 		<script src="js/jquery.min.js"></script>
+		<script src="js/cookie.js"></script>
 		<script src="js/register.js"></script>
 	</body>
 </html>
