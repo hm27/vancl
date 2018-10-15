@@ -27,10 +27,10 @@ $('.navbar li').each(function(){
 $.extend({
 	fnInit : function(id){			
 		//获取大盒子
-		this.oBigBox = $(id);
+		this.oBigBox = $("#" + id);
 		//获取所有的大图
 		this.ullis = this.oBigBox.children('.ban').find('li');
-		console.log(this.ullis);
+		//console.log(this.ullis);
 		//获取大图的数量
 		this.num = this.ullis.length;
 		//console.log(this.num);
@@ -103,7 +103,7 @@ $.extend({
 		var that = this;
 		this.timer = setInterval(()=>{
 			this.indexA ++;
-			console.log(this.indexA)
+			//console.log(this.indexA)
 			if(this.indexA == this.num){
 				this.indexA = 0;
 			}
@@ -124,7 +124,7 @@ $.extend({
 //		}.bind(this))
 	}
 })
-$.fnInit('#banner');
+$.fnInit('banner');
 
 
 //回到顶部部分
@@ -156,7 +156,7 @@ $.ajax({
 	success : function(arr){
 		var brr = [];
 		for(var i = 0,len = arr.length;i < len;i ++){
-			console.log(arr);
+			//console.log(arr);
 			var str= `
 				<p>
 					<a href="#">
@@ -173,3 +173,4 @@ $.ajax({
 		//console.log(brr[0]);				
 	}
 })
+

@@ -14,7 +14,7 @@ function Code(){
 //console.log(code);
 //点击验证码刷新当前页面
 $('.yzm-spa').click(function(){
-	window.location.reload();
+	Code();
 })
 //验证框输入是否正确
 $('#yzm').blur(function(){
