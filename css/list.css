@@ -38,7 +38,7 @@ em {
   border-bottom: 1px solid #cccccc;
   background: #f7f7f7; }
 
-.top, .header, .banner, .fan, .fall, .fall-content, .youx, .xiaz, .jinp, .server, .footer-f3, .lg-1, .xian2, .lg-content, .zc-content, .nav-list, .jk-warp, .tux, .wyx, .xft, .ymt, .cqt, .jht, .pfyt, .back-s {
+.top, .header, .banner, .fan, .fall, .fall-content, .youx, .xiaz, .jinp, .server, .footer-f3, .lg-1, .xian2, .lg-content, .zc-content, .nav-list, .jk-warp, .ttu, .back-s {
   width: 1202px;
   margin: 0 auto; }
 
@@ -469,8 +469,9 @@ em {
     .jk-warp .jk-p img {
       border: 0; }
   .jk-warp .jk-p:hover {
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1);
-    transition: 0.2s all linear; }
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    transition: 0.2s; }
   .jk-warp p:nth-child(3) {
     margin-right: 0; }
   .jk-warp .jk-last {
@@ -704,5 +705,9 @@ em {
   right: 10px;
   display: none;
   cursor: pointer; }
+
+.ttu:hover {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px); }
 
 /*# sourceMappingURL=list.css.map */

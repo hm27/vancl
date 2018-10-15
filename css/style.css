@@ -38,7 +38,7 @@ em {
   border-bottom: 1px solid #cccccc;
   background: #f7f7f7; }
 
-.top, .header, .banner, .fan, .fall, .fall-content, .youx, .xiaz, .jinp, .server, .footer-f3, .lg-1, .xian2, .lg-content, .zc-content, .nav-list, .jk-warp, .tux, .wyx, .xft, .ymt, .cqt, .jht, .pfyt, .back-s {
+.top, .header, .banner, .fan, .fall, .fall-content, .youx, .xiaz, .jinp, .server, .footer-f3, .lg-1, .xian2, .lg-content, .zc-content, .nav-list, .jk-warp, .ttu, .back-s {
   width: 1202px;
   margin: 0 auto; }
 
@@ -978,9 +978,6 @@ em {
           float: right;
           font-size: 12px;
           color: #979797; }
-          .lg-content .lg-con-rt .lg-rt-con h3 span:last-child b {
-            font-size: 12px;
-            color: #b42025; }
       .lg-content .lg-con-rt .lg-rt-con .form-dl {
         width: 404px;
         height: 410px;
@@ -1184,7 +1181,7 @@ em {
           line-height: 40px;
           margin-top: 20px; }
           .zc-content .zc-con-rt .zc-con-rt-top .zc-con-top .zc-con-top-sp b {
-            color: #b52024;
+            color: red;
             font-weight: 100;
             cursor: pointer; }
       .zc-content .zc-con-rt .zc-con-rt-top .for-zc {

@@ -17,7 +17,8 @@ $('.yzm-spa').click(function(){
 	Code();
 })
 //验证框输入是否正确
-$('#yzm').blur(function(){
+var _yzm;
+$('#yzm').blur(function(){		
 	if($(this).val() == ""){
 		$('.yzm-spa').next().css({"display":"block","width":"108px","height":"20px","font-size":"12px","color":"#a20000","background":"#f8f8f8","border":"1px solid #fcd4d5","z-index":99,"text-align":"center","position":"relative"});
 	}else if($(this).val() != code){
@@ -25,8 +26,12 @@ $('#yzm').blur(function(){
 	}else if($(this).val() == code){
 		$('.yzm-spa').next().css("display","none");
 	}	
+	 _yzm = $(this).val() == code;
+	//console.log( _yzm);
 })
+
 //手机号框的验证码
+var _phone2;
 $('.phone2-spa').hover(function(){
 	$(this).css("text-decoration","underline");
 },function(){
@@ -50,11 +55,14 @@ $("#phone2").blur(function(){
 		$(this).next().css({"display":"block","height":"20px","color":"#a20000","background":"#f8f8f8","border":"1px solid #fcd4d5","z-index":99,"text-align":"center"});
 	}else if(res){
 		$(this).next().html("");
-	}	
+	}
+	_phone2 = res;
+	//console.log(_phone2);
 })
 //console.log($phone2);
 //用户名框的验证
 var $zpe;
+var _zpe;
 $("#zpe").focus(function(){
 	$(this).next().html("请填写容易记忆的用户名");	
 	$(this).next().css({"color":"#999999","border":0,"background":0});
@@ -69,9 +77,11 @@ $("#zpe").blur(function(){
 	}else if(res){
 		$(this).next().html("");
 	}
+	_zpe = res;
 })
 //初次填写密码
 var $spwd;
+var _spwd;
 $("#spwd").focus(function(){
 	$(this).next().html("6-16位字符, 可使用字母、数字或符号的组合");
 	$(this).next().css({"color":"#999999","border":0,"background":0});
@@ -88,11 +98,12 @@ $("#spwd").blur(function(){
 		$(this).next().html("密码必须大于6位,请重新输入");
 		$(this).next().css({"display":"block","height":"20px","color":"#a20000","background":"#f8f8f8","border":"1px solid #fcd4d5","z-index":99,"text-align":"center"});
 	}
+	_spwd = res;
 })
-console.log($spwd);
+//console.log($spwd);
 //再次填写密码
 var $zspwd;
-
+var _zspwd;
 $("#zspwd").focus(function(){
 	$(this).next().html("请再次输入登录密码, 两次输入必须一致");
 	$(this).next().css({"color":"#999999","border":0,"background":0});
@@ -108,11 +119,20 @@ $("#zspwd").blur(function(){
 	}else if($zspwd == $spwd){
 		$(this).next().html("");
 	}	
+	_zspwd = $zspwd == $spwd;
+	//console.log($zpe);
 })
 //复选框是否被选中
 var $cx;
 $("#cx").click(function(){
-	$(this).parent().next().toggleClass('active1');
+	//验证所有文本框内容都正确的时候才可以点击协议
+	if(_yzm && _phone2 && _spwd && _zpe && _zspwd){
+		$(this).parent().next().toggleClass('active1');
+	}else{
+		alert("请正确填写以上内容！");
+		return false;
+	}
+	
 })
 //协议的下划线
 $(".for-spa-a,.zc-btn").hover(function(){
@@ -121,26 +141,33 @@ $(".for-spa-a,.zc-btn").hover(function(){
 	$(this).css("text-decoration","none");
 })
 
-
+//点击登录，跳转
+$('.zc-dl').click(function(){
+	window.open("login.html");
+})
 
 
 //注册页的cookie使用
 //创建一个空数组，放每次注册用户的信息
 var $arr = [];
 $('.zc-btn').click(function(){
-	//创建一个json对象，存每个用户的完整信息
-	var json = {
-			"phone": $phone2,
-			"uname": $zpe,
-			"upwd": $spwd
-		}
-	var brr = getCookie("username");
-	 console.log(brr);
-	if(brr.length != 0){
-		arr = brr;
+	if($('#cx').prop("checked")){
+		//创建一个json对象，存每个用户的完整信息
+		var json = {
+				"phone": $phone2,
+				"uname": $zpe,
+				"upwd": $spwd
+			}
+		var brr = getCookie("username");	
+		$arr.push(json);
+		console.log($arr);
+		setCookie( "username",JSON.stringify( $arr ) ,3 );
+		
+	}else{
+		alert("请认真阅读协议内容！");
+		return false;
 	}
-	$arr.push(json);
-	console.log($arr);
-	setCookie( "username",JSON.stringify( $arr ) ,3 );
+	
+	
 })
 

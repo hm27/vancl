@@ -71,8 +71,9 @@
         }
     }
     .jk-p:hover{
-        box-shadow: 15px 15px 30px rgba(0,0,0,0.1);
-        transition: 0.2s all linear;
+       box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+       transform: translateY(-2px);
+       transition: 0.2s;
     }
     p:nth-child(3){
         margin-right:0 ;
@@ -367,4 +368,9 @@
     right: 10px;
     display: none;
     cursor: pointer;
+}
+//各个导航hover的效果
+.ttu:hover{
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
 }

@@ -147,6 +147,13 @@ $.ajax({
 		}
 	}
 })	
+
+//图片阴影
+//$('.jk-p').hover(function(){
+//	$(this).css({"box-shadow":"0px 15px 30px rgba(0,0,0,0.1)","transform":"translateY(-2px)","transition":"0.2s"});
+//},function(){
+//	$(this).css({"box-shadow":"0","transform":0,"transition":"0"})
+//})
 //回到顶部的事件
 $(window).scroll(function(){
 	$('.hui-list').css("display","block");
@@ -156,11 +163,4 @@ $('.hui-list').click(function(){
 	$('html,body').animate({"scrollTop":0},50);
 })
 
-//图片的阴影
-/*$('.jk-p').mouseenter(function(){
-	$(this).find('img').css({"box-shadow":"0 15px 30px rgba(0,0,0,0.1)","transition":"0.2s all linear"});
-})
-$('.jk-p').mouseleave(function(){
-	$(this).find('img').css({"box-shadow":"0px 0px 0px 0px","transition":"0.2s all linear"});
-})*/
 
