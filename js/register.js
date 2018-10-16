@@ -150,24 +150,38 @@ $('.zc-dl').click(function(){
 //注册页的cookie使用
 //创建一个空数组，放每次注册用户的信息
 var $arr = [];
+var brr = getCookie("username");
+console.log(brr);
+if(brr.length != 0){
+	$arr = brr;
+}
+//console.log($arr[3].uname);
 $('.zc-btn').click(function(){
 	if($('#cx').prop("checked")){
-		//创建一个json对象，存每个用户的完整信息
-		var json = {
-				"phone": $phone2,
-				"uname": $zpe,
-				"upwd": $spwd
+		//console.log()
+		//先遍历$arr,看是否注册重名
+		for(var j = 0,len = $arr.length;j < len;j ++){
+			//console.log($zpe);
+			//console.log($arr[0].uname);
+			if($zpe == $arr[j].uname){
+				//console.log($zpe);
+				alert("此用户名已注册!");
+			}else{
+				//创建一个json对象，存每个用户的完整信息				
+				var json = {
+						"phone": $phone2,
+						"uname": $zpe,
+						"upwd": $spwd
+				}
+				$arr.push(json);
+				console.log($arr);
+				setCookie( "username",JSON.stringify( $arr ) ,3 );
+				alert("注册成功，可以去登录了!");
+				return false;
 			}
-		var brr = getCookie("username");	
-		$arr.push(json);
-		console.log($arr);
-		setCookie( "username",JSON.stringify( $arr ) ,3 );
-		
+		}
 	}else{
 		alert("请认真阅读协议内容！");
 		return false;
-	}
-	
-	
+	}	
 })
-
