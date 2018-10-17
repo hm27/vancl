@@ -75,9 +75,26 @@ $("#zpe").blur(function(){
 		$(this).next().html("用户名必须填写！");
 		$(this).next().css({"display":"block","height":"20px","color":"#a20000","background":"#f8f8f8","border":"1px solid #fcd4d5","z-index":99,"text-align":"center"});		
 	}else if(res){
-		$(this).next().html("");
+		var flag = true;
+		//判断用户名是否被注册
+		for(var j = 0,len = brr.length;j < len;j ++){
+			if($zpe == $arr[j].uname){
+				$(this).next().html("此用户名已注册!");
+				$(this).next().css({"display":"block","height":"20px","color":"#a20000","background":"#f8f8f8","border":"1px solid #fcd4d5","z-index":99,"text-align":"center"});
+				flag = false;
+			}
+		}				
+		if(flag){
+			$(this).next().html("");
+			_zpe = res;
+		}		
 	}
-	_zpe = res;
+	
+	
+	
+	
+	
+	
 })
 //初次填写密码
 var $spwd;
@@ -158,30 +175,20 @@ if(brr.length != 0){
 //console.log($arr[3].uname);
 $('.zc-btn').click(function(){
 	if($('#cx').prop("checked")){
-		//console.log()
-		//先遍历$arr,看是否注册重名
-		for(var j = 0,len = $arr.length;j < len;j ++){
-			//console.log($zpe);
-			//console.log($arr[0].uname);
-			if($zpe == $arr[j].uname){
-				//console.log($zpe);
-				alert("此用户名已注册!");
-			}else{
-				//创建一个json对象，存每个用户的完整信息				
-				var json = {
-						"phone": $phone2,
-						"uname": $zpe,
-						"upwd": $spwd
-				}
-				$arr.push(json);
-				console.log($arr);
-				setCookie( "username",JSON.stringify( $arr ) ,3 );
-				alert("注册成功，可以去登录了!");
-				return false;
+		//创建一个json对象，存每个用户的完整信息				
+		var json = {
+				"phone": $phone2,
+				"uname": $zpe,
+				"upwd": $spwd
 			}
-		}
+		$arr.push(json);
+		console.log($arr);
+		setCookie( "username",JSON.stringify( $arr ) ,3 );
+		alert("注册成功，可以去登录了!");
+		return false;
 	}else{
 		alert("请认真阅读协议内容！");
 		return false;
 	}	
+//	return false;
 })

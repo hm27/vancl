@@ -465,20 +465,19 @@ em {
         height: 100%;
         float: left; }
         .det-ban .det-con .det-con-lt .det-f-lt span {
-          width: 74px;
-          height: 74px;
+          width: 72px;
+          height: 72px;
           box-sizing: border-box;
           border: 1px solid #b4b4b4;
           display: block;
           margin-bottom: 10px;
           padding: 1px;
-          display: flex; }
+          cursor: pointer; }
           .det-ban .det-con .det-con-lt .det-f-lt span img {
             width: 68px;
             height: 68px;
             display: block;
-            border: 0;
-            margin: auto; }
+            border: 0; }
       .det-ban .det-con .det-con-lt .det-f-rt {
         width: 560px;
         height: 100%;
@@ -490,7 +489,30 @@ em {
           box-sizing: border-box;
           border: 1px solid #e5e6e6;
           margin-left: 80px;
-          margin-right: 80px; }
+          margin-right: 80px;
+          cursor: crosshair; }
+          .det-ban .det-con .det-con-lt .det-f-rt .smallpic .mark {
+            width: 404px;
+            height: 404px;
+            background: red;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 4; }
+          .det-ban .det-con .det-con-lt .det-f-rt .smallpic .float {
+            width: 224px;
+            height: 204px;
+            border: 1px solid #ececed;
+            background: #dbdee5;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            display: none; }
           .det-ban .det-con .det-con-lt .det-f-rt .smallpic .smp {
             display: block;
             border: 0;
@@ -509,7 +531,64 @@ em {
             z-index: 100; }
             .det-ban .det-con .det-con-lt .det-f-rt .smallpic .bigpic img {
               display: block;
-              border: 0; }
+              border: 0;
+              position: absolute;
+              top: 0;
+              left: 0; }
+        .det-ban .det-con .det-con-lt .det-f-rt .smallpic2 {
+          display: none;
+          position: relative;
+          width: 404px;
+          height: 404px;
+          box-sizing: border-box;
+          border: 1px solid #e5e6e6;
+          margin-left: 80px;
+          margin-right: 80px;
+          cursor: crosshair; }
+          .det-ban .det-con .det-con-lt .det-f-rt .smallpic2 .mark1 {
+            width: 404px;
+            height: 404px;
+            background: red;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 4; }
+          .det-ban .det-con .det-con-lt .det-f-rt .smallpic2 .float {
+            width: 224px;
+            height: 204px;
+            border: 1px solid #ececed;
+            background: #dbdee5;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            display: none; }
+          .det-ban .det-con .det-con-lt .det-f-rt .smallpic2 .smp {
+            display: block;
+            border: 0;
+            width: 100%;
+            height: 100%; }
+          .det-ban .det-con .det-con-lt .det-f-rt .smallpic2 .bigpic {
+            display: none;
+            width: 444px;
+            height: 404px;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            position: absolute;
+            top: -20px;
+            left: 408px;
+            overflow: hidden;
+            z-index: 100; }
+            .det-ban .det-con .det-con-lt .det-f-rt .smallpic2 .bigpic img {
+              display: block;
+              border: 0;
+              position: absolute;
+              top: 0;
+              left: 0; }
     .det-ban .det-con .det-con-rt {
       float: left;
       width: 450px;
@@ -647,8 +726,7 @@ em {
 .xqjs {
   font-size: 12px;
   color: #999999;
-  line-height: 22px;
-  border: 1px solid #000; }
+  line-height: 22px; }
 
 .mtt {
   height: 168px;
