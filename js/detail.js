@@ -52,3 +52,17 @@ $('.mark,.mark1').mousemove(function(evt){
 		top :-($('.big_pic1').height() - $('.bigpic').height()) * pY
 	})
 })
+//吸顶效果
+var heigth = 600;
+$(function(){
+	$(window).scroll(function(){
+		//console.log(heigth);
+		var scrollTop = $(window).scrollTop();
+		console.log(scrollTop);
+		if(scrollTop > heigth){
+			$(".det-headx-2").css({"display":"block","z-index":1000});
+		}else{
+			$(".det-headx-2").css({"display":"none"});
+		}
+	})
+})

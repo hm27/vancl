@@ -33,6 +33,7 @@
                     line-height: 45px;
                     margin-left:12px;
                     margin-right: 16px;
+                    font-weight: 900;
                 }
                 span{
                     font-size: 12px;
@@ -52,6 +53,25 @@
                     margin-right: 19px;
                 }
             }           
+        }
+        .det-headx-2{
+            left: 0px;
+            position: fixed;
+            width: 100%;
+            background: #fff;
+            top: 0;
+            border: 1px solid #e6e8e9;
+            box-sizing: border-box;
+            display: none;
+            .det-headx-r-r{
+                float: right;
+                margin-top: 5px;
+                width:168px ;
+                height: 33px;
+                margin-right: 10px;
+                cursor: pointer;
+                background: url(../img/detail/vanclsprite.png) no-repeat -167px -285px;
+            }
         }
     }
     .det-con{

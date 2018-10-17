@@ -149,11 +149,18 @@ $.ajax({
 })	
 
 //图片阴影
-//$('.jk-p').hover(function(){
-//	$(this).css({"box-shadow":"0px 15px 30px rgba(0,0,0,0.1)","transform":"translateY(-2px)","transition":"0.2s"});
-//},function(){
-//	$(this).css({"box-shadow":"0","transform":0,"transition":"0"})
+//
+//$('.jk-p').mouseenter(function(){
+////	alert();
+//	$(this).animate({"transform":"translateY(-2px)","box-shadow":"0px 15px 30px rgba(0,0,0,0.1)","background":"red"},1000);
+//	//$(this).css({"box-shadow":"0px 15px 30px rgba(0,0,0,0.1)","transform":"translateY(-2px)","transition":"0.2s"});
 //})
+//$('.jk-p').mouseleave(function(){
+//	$('.jk-p').animate({"transform":"0"},3000);
+//	//$(this).css({"box-shadow":"0px 15px 30px rgba(0,0,0,0.1)","transform":"translateY(-2px)","transition":"0.2s"});
+//})
+
+
 //回到顶部的事件
 $(window).scroll(function(){
 	$('.hui-list').css("display","block");
@@ -163,4 +170,54 @@ $('.hui-list').click(function(){
 	$('html,body').animate({"scrollTop":0},50);
 })
 
-
+//导航的吸顶效果
+var heigth = 700;
+$(function(){
+	$(window).scroll(function(){
+		//console.log(heigth);
+		var scrollTop = $(window).scrollTop();
+		console.log(scrollTop);
+		if(scrollTop > heigth){
+			$(".nav-list_wrap").css({"position":"fixed","top":"0","z-index":1000});
+		}else{
+			$(".nav-list_wrap").css({"position":""});
+		}
+//		if(scrollTop >= 1600 && scrollTop < 15798){
+//			$('.jddj').css("color","#a10000");
+//			$('.jddj').parent().siblings().find('a').css("color","");
+//		}else if(scrollTop >= 15898 && scrollTop < 19598){
+//			$('.jddj1').css("color","#a10000");
+//			$('.jddj1').parent().siblings().find('a').css("color","");
+//		}else if(scrollTop >= 19698 && scrollTop < 17398){
+//			$('.jddj2').css("color","#a10000");
+//			$('.jddj2').parent().siblings().find('a').css("color","");
+//		}
+	})
+	
+})
+//楼梯
+$('.jddj').click(function(){
+	$('html,body').scrollTop(1500);
+	$(this).css("color","#a10000");
+	$(this).parent().siblings().find('a').css("color","");
+})
+$('.jddj1').click(function(){
+	$('html,body').scrollTop(15797);
+	$(this).css("color","#a10000");
+	$(this).parent().siblings().find('a').css("color","");
+})
+$('.jddj2').click(function(){
+	$('html,body').scrollTop(17397);
+	$(this).css("color","#a10000");
+	$(this).parent().siblings().find('a').css("color","");
+})
+$('.jddj3').click(function(){
+	$('html,body').scrollTop(19595);
+	$(this).css("color","#a10000");
+	$(this).parent().siblings().find('a').css("color","");
+})
+$('.jddj4').click(function(){
+	$('html,body').scrollTop(798);
+	$(this).css("color","#a10000");
+	$(this).parent().siblings().find('a').css("color","");
+})
