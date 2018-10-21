@@ -59,11 +59,12 @@ $('.phone-spa').hover(function(){
 
 
 //获取注册的信息
+
 var crr = getCookie("username");
 $('.dl-1').click(function(){
 	for(var i = 0,len = crr.length;i < len; i ++){
 		if($('#uname').val() == crr[i].uname){
-			if($('#upwd').val() == crr[i].upwd){
+			if($('#upwd').val() == crr[i].upwd){	
 				window.open("index.html");
 			}else{
 				alert("密码有误!");
@@ -72,10 +73,6 @@ $('.dl-1').click(function(){
 		}
 	}
 })
-
-
-
-
 //点击注册跳转页面
 $('.lg-zc').click(function(){
 	window.open("register.html");

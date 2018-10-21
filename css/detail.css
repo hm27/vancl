@@ -648,27 +648,32 @@ em {
         .det-ban .det-con .det-con-rt .ys-t b {
           font-weight: 400; }
         .det-ban .det-con .det-con-rt .ys-t .xys {
+          cursor: pointer;
+          padding: 1px;
           display: inline-block;
-          width: 98px;
-          height: 40px;
-          box-sizing: border-box;
+          width: 92px;
+          height: 34px;
           border: 1px solid #b4b4b4;
           padding: 2px;
           text-indent: 46px;
           line-height: 22px;
           background-clip: padding-box;
-          background: url(../img/detail/joinimages.jpg) no-repeat 0 0; }
+          background-origin: padding-box;
+          background: url(../img/detail/joinimages.jpg) no-repeat 0 0px; }
         .det-ban .det-con .det-con-rt .ys-t .xys1 {
           background: url(../img/detail/joinimages.jpg) no-repeat 0 -36px; }
         .det-ban .det-con .det-con-rt .ys-t .xys2 {
           background: url(../img/detail/joinimages.jpg) no-repeat 0 -72px; }
         .det-ban .det-con .det-con-rt .ys-t .xys3 {
           background: url(../img/detail/joinimages.jpg) no-repeat 0 -108px; }
+        .det-ban .det-con .det-con-rt .ys-t .xys5 {
+          border: 1px solid #a10000; }
       .det-ban .det-con .det-con-rt .xcm {
         height: 40px;
         font-size: 12px;
         color: #666666; }
         .det-ban .det-con .det-con-rt .xcm .cc {
+          cursor: pointer;
           color: #000;
           margin-left: 5px;
           display: inline-block;
@@ -681,6 +686,8 @@ em {
             margin-left: 10px;
             margin-right: 10px;
             font-weight: 400; }
+        .det-ban .det-con .det-con-rt .xcm .cc1 {
+          border: 1px solid #a10000; }
       .det-ban .det-con .det-con-rt .xsl {
         height: 48px;
         font-size: 12px;
@@ -703,8 +710,9 @@ em {
           color: #a10000; }
       .det-ban .det-con .det-con-rt .gm {
         height: 60px;
-        width: 350px; }
-        .det-ban .det-con .det-con-rt .gm a {
+        width: 350px;
+        position: relative; }
+        .det-ban .det-con .det-con-rt .gm .gm-con {
           font-size: 12px;
           color: #a50309;
           text-align: center;
@@ -714,13 +722,98 @@ em {
           margin-top: 14px;
           line-height: 34px;
           box-sizing: border-box; }
-        .det-ban .det-con .det-con-rt .gm a:first-child {
+        .det-ban .det-con .det-con-rt .gm .gm-first {
           float: left;
           background: #f7abaf; }
-        .det-ban .det-con .det-con-rt .gm a:last-child {
+        .det-ban .det-con .det-con-rt .gm .gm-last {
           float: right;
           background: url(../img/detail/vanclsprite.png) no-repeat -147px -285px;
           border: 0; }
+        .det-ban .det-con .det-con-rt .gm .carshop {
+          z-index: 99999;
+          width: 500px;
+          height: 160px;
+          display: none;
+          position: absolute;
+          top: -2px;
+          left: -1px;
+          background: #fff; }
+          .det-ban .det-con .det-con-rt .gm .carshop h3 {
+            width: 500px;
+            height: 44px;
+            background: #b91a22;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 300;
+            text-indent: 30px;
+            line-height: 44px;
+            position: relative; }
+            .det-ban .det-con .det-con-rt .gm .carshop h3 span {
+              display: block;
+              width: 17px;
+              height: 14px;
+              position: absolute;
+              right: 30px;
+              top: 14px;
+              cursor: pointer;
+              background: url(../img/detail/vanclsprite.png) no-repeat -368px -113px; }
+          .det-ban .det-con .det-con-rt .gm .carshop .car-car {
+            width: 500px;
+            height: 116px;
+            border: 1px solid #b91a22;
+            border-top: 0;
+            box-sizing: border-box;
+            padding: 20px 30px 0 30px; }
+            .det-ban .det-con .det-con-rt .gm .carshop .car-car div {
+              float: left; }
+            .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-lt {
+              width: 75px;
+              height: 75px;
+              background: url(../img/detail/vanclsprite.png) no-repeat -232px -120px; }
+            .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-con {
+              width: 167px;
+              height: 61px;
+              margin: 0 16px 0;
+              padding-top: 14px; }
+              .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-con .car-con-lt {
+                width: 1px;
+                height: 36px;
+                background: #b91c22;
+                float: left;
+                margin-right: 18px;
+                margin-top: 5px; }
+              .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-con .car-con-rt {
+                float: left;
+                width: 148px;
+                height: 44px; }
+                .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-con .car-con-rt p {
+                  height: 22px;
+                  line-height: 22px;
+                  color: #020102;
+                  font-size: 14px; }
+                  .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-con .car-con-rt p span {
+                    float: left; }
+                  .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-con .car-con-rt p .number {
+                    color: #b91c22; }
+            .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-rt {
+              width: 164px;
+              height: 33px;
+              margin-top: 19px; }
+              .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-rt a {
+                width: 82px;
+                height: 33px;
+                line-height: 33px;
+                text-align: center;
+                font-size: 14px;
+                float: left; }
+                .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-rt a:hover {
+                  text-decoration: underline; }
+              .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-rt a:first-child {
+                background: #f0eff0;
+                color: #727070; }
+              .det-ban .det-con .det-con-rt .gm .carshop .car-car .car-rt a:last-child {
+                background: #b91c22;
+                color: #fff; }
       .det-ban .det-con .det-con-rt .yht {
         height: 50px;
         width: 402px;

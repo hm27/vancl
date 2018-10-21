@@ -182,42 +182,50 @@ $(function(){
 		}else{
 			$(".nav-list_wrap").css({"position":""});
 		}
-//		if(scrollTop >= 1600 && scrollTop < 15798){
-//			$('.jddj').css("color","#a10000");
-//			$('.jddj').parent().siblings().find('a').css("color","");
-//		}else if(scrollTop >= 15898 && scrollTop < 19598){
-//			$('.jddj1').css("color","#a10000");
-//			$('.jddj1').parent().siblings().find('a').css("color","");
-//		}else if(scrollTop >= 19698 && scrollTop < 17398){
-//			$('.jddj2').css("color","#a10000");
-//			$('.jddj2').parent().siblings().find('a').css("color","");
-//		}
+		if(scrollTop <= 1500){
+			$('.jddj').css("color","");
+		}//else 
+		if(scrollTop >= 1500 && scrollTop < 15798){
+			$('.jddj').css("color","#a10000");
+			$('.jddj').parent().siblings().find('a').css("color","");
+		}else if(scrollTop >= 15798 && scrollTop < 17398){
+			$('.jddj1').css("color","#a10000");
+			$('.jddj1').parent().siblings().find('a').css("color","");
+		}else if(scrollTop >= 17398 && scrollTop < 19598){
+			$('.jddj2').css("color","#a10000");
+			$('.jddj2').parent().siblings().find('a').css("color","");
+		}else if(scrollTop >= 17598 && scrollTop < 21135){
+			$('.jddj3').css("color","#a10000");
+			$('.jddj3').parent().siblings().find('a').css("color","");
+		}else if(scrollTop > 21135){
+			$('.jddj3').css("color","");
+		}
 	})
 	
 })
 //楼梯
 $('.jddj').click(function(){
-	$('html,body').scrollTop(1500);
+	$('html,body').scrollTop(1600);
 	$(this).css("color","#a10000");
 	$(this).parent().siblings().find('a').css("color","");
 })
 $('.jddj1').click(function(){
-	$('html,body').scrollTop(15797);
+	$('html,body').scrollTop(15899);
 	$(this).css("color","#a10000");
 	$(this).parent().siblings().find('a').css("color","");
 })
 $('.jddj2').click(function(){
-	$('html,body').scrollTop(17397);
+	$('html,body').scrollTop(17499);
 	$(this).css("color","#a10000");
 	$(this).parent().siblings().find('a').css("color","");
 })
 $('.jddj3').click(function(){
-	$('html,body').scrollTop(19595);
+	$('html,body').scrollTop(19698);
 	$(this).css("color","#a10000");
 	$(this).parent().siblings().find('a').css("color","");
 })
 $('.jddj4').click(function(){
-	$('html,body').scrollTop(798);
+	$('html,body').scrollTop(899);
 	$(this).css("color","#a10000");
 	$(this).parent().siblings().find('a').css("color","");
 })

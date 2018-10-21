@@ -190,5 +190,4 @@ $('.zc-btn').click(function(){
 		alert("请认真阅读协议内容！");
 		return false;
 	}	
-//	return false;
 })

@@ -9,14 +9,14 @@
 	<body>
         <!-------------------top -------------------------------->
 		<div id="top">
-			<div class=" top">
+			<div class="top">
 				<ul >
-					<li>您好，欢迎光临凡客诚品!</li>
+					<li>您好，<span class="name-login">欢迎光临凡客诚品</span>&nbsp;!</li>
 					<li><a href="login.html">登录</a></li>
 					<li>|</li>
 					<li><a href="register.html">注册</a></li>
-					<li><a href="#">我的订单</a></li>
-					<li><a href="#">网站公告</a></li>
+					<li><a href="shopcar.html">我的订单</a></li>
+					<li><a href="javascript:;">网站公告</a></li>
 					<li>
 						<span>							
 							<p class="wxer">
@@ -33,11 +33,10 @@
 		
 <!--------------------------------------header-------------------------------->
 			<div class=" header">
-				<!--<em>&#xe622;</em>-->
-				<div class="car">购物车 (<span>0</span>) </div>
-				<div class="car-xd">您的购物车中没有任何商品</div>
+				<a href="shopcar.html" class="car">购物车 (<span>0</span>) </a>
+				<!--<div class="car-xd">您的购物车中没有任何商品</div>-->
 				<form action="" method="post" >
-					<input type="text" name="" id="" value="搜 “衬衫” , 体验与众不同" />				
+					<input type="text" name="" id="tet" value="搜 “衬衫” , 体验与众不同" onmouseover="selectInputContent(this.id)"/>				
 					<input type="submit" name="" id="" value="搜索" />
 				</form>
 				<ul class="hot">
@@ -178,11 +177,11 @@
 			<!---------------------banner部分-------------------------->
 			<div class="banner" id="banner">
 				<ul class="ban">
-					<li><a href="detail.html"><img src="img/index/cs1200-576.jpg" /></a></li>
-					<li><a href="detail.html"><img src="img/index/njf1200-576.jpg" /></a></li>
-					<li><a href="detail.html"><img src="img/index/wt1200-535.jpg" /></a></li>
-					<li><a href="detail.html"><img src="img/index/wy1200-535.jpg" /></a></li>
-					<li><a href="detail.html"><img src="img/index/x1200-535.jpg" /></a></li>
+					<li><a href="list.html"><img src="img/index/cs1200-576.jpg" /></a></li>
+					<li><a href="list.html"><img src="img/index/njf1200-576.jpg" /></a></li>
+					<li><a href="list.html"><img src="img/index/wt1200-535.jpg" /></a></li>
+					<li><a href="list.html"><img src="img/index/wy1200-535.jpg" /></a></li>
+					<li><a href="list.html"><img src="img/index/x1200-535.jpg" /></a></li>
 				</ul>
 				<span id="lbtn"></span>
 				<span id="rbtn"></span>

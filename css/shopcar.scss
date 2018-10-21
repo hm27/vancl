@@ -1,0 +1,165 @@
+@charset "utf-8";
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,figure,figcaption{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input{outline:none;}
+
+
+.lg-car{
+    width: 884px;
+//  border: 1px solid #000;
+    padding-left: 96px;
+}
+.xian2-car{
+    width: 980px;
+    margin-bottom: 10px;
+}
+.mycar{
+   width: 980px;
+   margin: 0 auto; 
+   height: 30px;
+   line-height: 30px;
+   span{
+       float: left;
+       width: 178px;
+       height: 28px;
+       text-align: center;
+       font-size: 12px;
+       color: #676667;
+       
+   }
+   span:first-child{
+       color: #fff;
+       background: url(../img/car/newProm.gif) no-repeat 0 0;
+   }
+   span:nth-child(2){
+       background: url(../img/car/newProm.gif) no-repeat -178px 0;
+   }
+   span:nth-child(3){
+       background: url(../img/car/newProm.gif) no-repeat -356px 0;
+   }
+}
+.car-top{
+    width: 980px;
+    margin: 11px auto 0;
+    background: url(../img/car/newpromotion.png) no-repeat -461px 0;
+    h2{
+        height: 37px;
+        width: 980px;       
+        font-size: 18px;
+        color: #323232;
+        text-indent: 46px;
+        line-height: 37px;
+        font-weight: 500;
+    }
+}
+.friend{
+    width: 980px;
+    margin: 0 auto ;
+    height: 30px;
+    font-size: 12px;
+    color: #646464;
+    span{
+        color: #a10000;
+    }
+}
+.cart-he{
+    width: 980px;
+    margin: 0 auto ;
+    .cart-s{
+        height: 37px;
+        background: url(../img/car/carthd.png);
+        font-size:12px;
+        color: #323232;
+        line-height: 37px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #B7B7B7;
+        input{
+            vertical-align: middle;
+        }
+        span{
+            font-size:12px;
+            color: #323232;
+        }
+        
+    }
+    .cart-x{
+        border: 1px solid #dddfe5;
+        border-top: 0;
+        padding: 22px 16px;
+    }
+}
+.cart-he-x{
+    width: 980px;
+    margin: 12px auto 0;
+    height: 118px;
+    border: 1px solid #ebe5bb;
+    box-sizing: border-box;
+    background: #fffef5;
+    padding-top: 27px;
+    p:first-child{
+        height: 24px;
+        font-size: 12px;
+        color: #333333;
+        line-height: 24px;
+        span{
+            font-size: 12px;
+            color: #333333;
+            margin-right: 45px;
+            margin-left: 10px;
+        }
+        
+        input{
+            margin-right: 11px;
+            vertical-align: middle;
+        }
+        span:last-child{
+            color: #a10000;
+        }
+    }
+    .cart-fu{
+        padding-right: 10px;
+        height: 52px;
+        line-height: 52px;
+        overflow: hidden;
+        .cart-ltt{
+            float: left;
+            font-size: 12px;
+            color: #333333;
+            span:last-child{
+                font-size: 18px;
+                color: #a10000;
+            }
+        }
+        .cart-rtt{
+            float: right;
+            a{
+                float: right;
+            }
+            .cart-rtt-2{
+                font-size: 16px;
+                color: #666666;
+                width: 121px;
+                height: 36px;
+                margin-top: 7px; 
+                line-height: 36px;  
+                text-align: center;
+                background: url(../img/car/newpromotion.png) no-repeat -161px 0;           
+            }
+            .cart-rtt-1{
+                width: 160px;
+                height: 52px;
+                text-indent: 52px;
+                margin-left: 12px;
+                font-size: 20px;
+                color: #fff;
+                background: url(../img/car/newpromotion.png) no-repeat 0 0;
+            }
+        }
+    }
+}

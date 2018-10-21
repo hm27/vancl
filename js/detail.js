@@ -52,17 +52,90 @@ $('.mark,.mark1').mousemove(function(evt){
 		top :-($('.big_pic1').height() - $('.bigpic').height()) * pY
 	})
 })
+
+//放大镜的小图选项
+$(".xys").click(function(){
+//	alert();
+	//$(this).css("border","1px solid #a10000");
+	$(this).addClass("xys5");
+	$(this).siblings().removeClass("xys5");
+	var val = $(this).html();
+	$('.yxys').find('span').eq(0).html(val);
+	
+})
+
+$('.cc').click(function(){
+	$(this).addClass("cc1");
+	$(this).siblings().removeClass("cc1");
+	var res = $(this).find('b').html();
+//	console.log(res);
+	$('.yxys').find('span').eq(1).css('display',"inline-block");
+	$('.yxys').find('span').eq(1).html(", "+ res);
+})
+
+
+
+
 //吸顶效果
 var heigth = 600;
 $(function(){
 	$(window).scroll(function(){
 		//console.log(heigth);
 		var scrollTop = $(window).scrollTop();
-		console.log(scrollTop);
+		//console.log(scrollTop);
 		if(scrollTop > heigth){
 			$(".det-headx-2").css({"display":"block","z-index":1000});
 		}else{
 			$(".det-headx-2").css({"display":"none"});
 		}
+		if(scrollTop < 900){
+			$('.det-headx-2 .det-headx-r').find('a').eq(0).css("color","");
+		}else if(scrollTop >=900 && scrollTop < 18200){
+			$('.det-headx-2 .det-headx-r').find('a').eq(0).css("color","#a10000");
+			$('.det-headx-2 .det-headx-r').find('a').eq(0).siblings().css("color","");
+		}else if(scrollTop >= 18200 && scrollTop < 18600){
+			$('.det-headx-2 .det-headx-r').find('a').eq(1).css("color","#a10000");
+			$('.det-headx-2 .det-headx-r').find('a').eq(1).siblings().css("color","");
+		}else if(scrollTop >= 18600 && scrollTop < 19200){
+			$('.det-headx-2 .det-headx-r').find('a').eq(2).css("color","#a10000");
+			$('.det-headx-2 .det-headx-r').find('a').eq(2).siblings().css("color","");
+		}
 	})
 })
+
+
+//楼梯
+$('.det-headx-2 .det-headx-r').find('a').eq(0).click(function(){
+	//console.log($(this));
+	$("html,body").scrollTop(900);
+	$(this).css("color","#a10000");
+	$(this).siblings().css("color","");
+})
+$('.det-headx-2 .det-headx-r').find('a').eq(1).click(function(){
+	//console.log($(this));
+	$("html,body").scrollTop(18300);
+	$(this).css("color","#a10000");
+	$(this).siblings().css("color","");
+})
+$('.det-headx-2 .det-headx-r').find('a').eq(2).click(function(){
+	//console.log($(this));
+	$("html,body").scrollTop(18700);
+	$(this).css("color","#a10000");
+	$(this).siblings().css("color","");
+})
+
+//点击加入购物车
+$('.gm .gm-last').click(function(){
+	$('.carshop').css('display','block');
+})
+$('.carshop .cha').click(function(){
+	$('.carshop').css("display","none");
+})
+$('.xsl select').mouseup(function(){
+	var res = $(this).find("option:selected").html();
+	$('.number-1').text(res);
+	var res2 = parseFloat(res * 328.00);
+	$('.number-2').text(res2);
+})
+
+

@@ -13,15 +13,22 @@ $('.top ul li:last span:eq(0)').hover(function(){
 })
 
 
+//$('.car').hover(function(){
+//	$(this).css({"background-position-y":"-29px","color":"#a10000","border-bottom":"1px solid #fff"});
+//	$(this).next().css("display","block");
+//},function(){
+//	$(this).css({"background-position-y":"0","color":"","border-bottom":""});
+//	$(this).next().css("display","none");
+//})
 
-$('.car').hover(function(){
-	$(this).css({"background-position-y":"-29px","color":"#a10000","border-bottom":"1px solid #fff"});
-	$(this).next().css("display","block");
-},function(){
-	$(this).css({"background-position-y":"0","color":"","border-bottom":""});
-	$(this).next().css("display","none");
-})
 
+//划过文本框选中内容
+function selectInputContent(n){
+	 obj =document.getElementById(n);
+	 obj.focus();
+	 obj.select();
+	 obj.style.border = "1px solid #a5c7ff";
+}
 //主导航功能
 $('.navbar li').each(function(){
 	$(this).hover(function(){
@@ -183,4 +190,3 @@ $.ajax({
 		//console.log(brr[0]);				
 	}
 })
-
